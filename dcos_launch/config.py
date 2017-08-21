@@ -272,17 +272,14 @@ GCE_ONPREM_SCHEMA = {
     'os_name': {
         'type': 'string',
         'required': False,
-        'default': 'coreos',
-        'allowed': ['coreos']},
+        'default': 'coreos'},
     'source_image': {
         'type': 'string',
-        'required': False,
-        'default_setter': lambda doc: dcos_launch.platforms.gce.OS_IMAGE_FAMILIES.get(doc['os_name'], doc['os_name']),
-        'allowed': list(dcos_launch.platforms.gce.IMAGE_PROJECTS.keys())},
+        'required': False},
     'image_project': {
         'type': 'string',
         'required': False,
-        'default_setter': lambda doc: dcos_launch.platforms.gce.IMAGE_PROJECTS[doc['source_image']]},
+        'default': 'coreos-cloud'},
     'ssh_public_key': {
         'type': 'string',
         'required': False},

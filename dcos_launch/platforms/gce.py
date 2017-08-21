@@ -54,7 +54,7 @@ properties:
       initializeParams:
         diskSizeGb: {diskSizeGb}
         diskType: {diskType}
-        sourceImage: projects/{imageProject}/global/images/family/{sourceImage}
+        sourceImage: projects/{imageProject}/global/images/{sourceImage}
     networkInterfaces:
     - network: global/networks/{network}
       # Access Config required to give the instance a public IP address

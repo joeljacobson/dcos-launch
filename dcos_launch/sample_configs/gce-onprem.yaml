@@ -5,6 +5,7 @@ installer_url: https://downloads.dcos.io/dcos/testing/master/dcos_generate_confi
 platform: gce
 provider: onprem
 os_name: coreos
+source_image: coreos-stable-1465-6-0-v20170817
 dcos_config:
     cluster_name: My Awesome DC/OS
     resolvers:
